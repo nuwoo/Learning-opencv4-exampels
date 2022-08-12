@@ -57,20 +57,16 @@ createTrackbar(
   Mat frame;
 
   for(;;) {
-
     if( g_run != 0 ) {
       g_cap >> frame;
       if(frame.empty()) break;
       int current_pos = (int)g_cap.get( CAP_PROP_POS_FRAMES );
       g_dontset = 1;
-
       cv::setTrackbarPos("Position", "Example 2-4", current_pos);
       cv::imshow( "Example 2-4", frame );
       g_run-=1;
     }
-
     char c = (char) cv::waitKey(10);
-
     if( c == 's' ) { // single step
       g_run = 1;
       cout << "Single step, run = " << g_run << endl;
