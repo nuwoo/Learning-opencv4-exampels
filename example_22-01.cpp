@@ -45,7 +45,7 @@ void detectAndDraw(
         objects,                    // place for the results
         1.1,                        // scale factor
         3,                          // minimum number of neighbors
-        CV_HAAR_DO_CANNY_PRUNING,   // (old format cascades only)
+        cvHaarDetectObjects,   // (old format cascades only)
         cv::Size(30, 30));          // throw away detections smaller than this
 
     // Loop through to found objects and draw boxes around them

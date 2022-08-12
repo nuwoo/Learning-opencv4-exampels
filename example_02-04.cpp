@@ -51,7 +51,7 @@ createTrackbar(
     "Position",
     "Example 2-4",
     &g_slider_position,
-    frames,
+    frames - 1,
     onTrackbarSlide
   );
   Mat frame;
