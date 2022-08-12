@@ -58,7 +58,7 @@ void draw_detect(
     int i = 0;
     for( vector<cv::Rect>::iterator r = objects.begin();
             r != objects.end(); r++ , i++){
-        cv::Rect r_
+        cv::Rect r_;
     }
 }
 
